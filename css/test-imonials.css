@@ -1,0 +1,101 @@
+:root{
+--Moderate-violet: hsl(263, 55%, 52%);
+--Very-dark-grayish-blue: hsl(217, 19%, 35%);
+--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayish-blue: hsl(210, 46%, 95%);
+}
+*{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-grayish-blue);
+}
+main{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+.daniel{
+    background-color: var(--Moderate-violet);
+    
+    grid-column:  span 2;
+}
+.jonathan {
+    background-color: var(--Very-dark-grayish-blue);
+}
+.kira{
+    background-color: white;
+    grid-row: span 2; 
+
+}
+.jeanette{
+    background-color: white;
+}
+.patrick{
+    background-color: var(--Very-dark-blackish-blue) ;
+    grid-column: span 2;
+}
+.profile{
+    margin: 1rem 0 ;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.daniel, .jeanette, .jonathan, .kira, .patrick{
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+    z-index: 99;
+}
+img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    
+}
+.name {
+    color: white;
+}
+
+p {
+    font-size: 13px;
+    color: var(--Light-gray); 
+}
+.title{
+    color: white;
+    font-size: 19px;
+    margin-bottom: 1.5rem;
+    z-index: 2;
+    position: relative;
+}
+.sub-title{
+    color: var(--Light-gray);
+    font-size: 12px;
+    line-height: 20px;
+}
+.title2{
+    font-size:20px ;
+    margin-bottom: 1.5rem;
+}
+.coma{
+    width: 80px;
+    height: 120px;
+    border-style: none;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    right: 4rem;
+    z-index: 1;
+}
